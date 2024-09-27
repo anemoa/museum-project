@@ -1,0 +1,27 @@
+.container{
+    background-color: beige;
+
+    article{
+        display: flex;
+        background-color: red;
+
+        .art_img{
+            width: 65%;
+            max-width: 850px;
+
+            img{
+                width: 100%;
+            }
+
+            .art_title{
+                font-size: 50px;
+            }
+        }
+
+        .art_detail{
+            width: 30%;
+
+            
+        }
+    }
+}
