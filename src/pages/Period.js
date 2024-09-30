@@ -1,16 +1,22 @@
 import React from 'react'
+import CenturyWrap from '../components/PageSpecific/Period/CenturyWrap'
 
 const Period = () => {
   return (
     <main className='container'>
-        <div className="century">
-            <button>16 Century</button>
-        </div>
+        <section className='century_container'>
+            <div className="cen_wrap">
+                <div className='century'>
+                    <button className='cen_btn'>16 Century</button>
+                </div>
 
-        <section className='artists_list'>
-            <article>
-                
-            </article>
+                <CenturyWrap />
+            </div>
+
+        </section>
+
+        <section className='artists_wrap'>
+            
         </section>
     </main>
   )

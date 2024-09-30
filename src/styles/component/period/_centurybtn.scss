@@ -1,0 +1,27 @@
+    
+.cen_list li{
+    width: 31%;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: $sub-title-text-1;
+    color: $white-2;
+    font-weight: $font-bold;
+    border-radius: 3px;
+    border: 1px solid $white-2;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 200m
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem 0;
+    }
+  
+}
+.cen_list li:hover{
+    color: $white-1;
+    border: 1px solid $white-1;
+    opacity: 1;
+    box-sizing: border-box;
+}

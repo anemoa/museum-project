@@ -1,0 +1,39 @@
+.cen_bg{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    
+   &.cen_bg.active{
+        display: block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        &::before {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 0.5px;
+            background-color: $white-1;
+            opacity: 0.5;
+        }
+   }
+
+
+    .cen_list_wrap{
+        width: 100%;
+        background-color: $black-1;
+
+        &.cen_list_wrap.active{
+            background-color: $black-1;
+        }
+
+        .cen_list{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: $max-width;
+            margin: 0 auto;
+            padding: 1.5rem 0;
+        }
+    }
+}
