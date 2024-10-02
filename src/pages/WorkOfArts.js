@@ -4,7 +4,7 @@ import Windmill from '../assets/images/windmill.png';
 const WorkOfArts = () => {
   return (
     <main className='container'>
-      <article>
+      <article className=''>
         <div className='art_img'>
           <img src={Windmill} alt='' />
           <p className='art_title'>The Milkmaid</p>
