@@ -1,119 +1,18 @@
+@import '../component/period/century_wrap';
+@import '../component/period/century_bg';
+@import '../component/period/century_list';
+@import '../component/period/century_btn';
+
+@import '../component/period/artists_wrap';
+@import '../component/period/artist_card';
+
+
 .container{
 
     .century_container{
         width: 100%;
-    
-        .cen_wrap{
-            width: 100%;
-            
-            &.cen_wrap.active{
-                background-color: $black-1;
-    
-                .cen_btn{
-                    color: $white-1;
-                }
-            }
-    
-            .century{
-                max-width: $max-width;
-                margin: 0 auto;
-                padding: 80px 0 50px;
-                text-align: center;
-        
-                // &.century.active{
-                //     background-color: $black-1;
-                // }
-        
-                .cen_btn{
-                    padding: 0 20px;
-                    color: $black-1;
-                    font-size: $title-text;
-        
-                    &.cen_btn.active{
-                      color: $sub-color;
-                    }
-                }
-            }
-        }
-    
-        // .cen_bg{
-        //     display: none;
-        //     width: 100%;
-        //     height: 100vh;
-            
-        //    &.cen_bg.active{
-        //         display: block;
-        //         position: absolute;
-        //         background-color: rgba(0, 0, 0, 0.5);
-    
-        //         &::before {
-        //             display: block;
-        //             content: "";
-        //             width: 100%;
-        //             height: 0.5px;
-        //             background-color: $white-1;
-        //             opacity: 0.5;
-        //         }
-        //    }
-    
-    
-        //     .cen_list_wrap{
-        //         width: 100%;
-    
-        //         &.cen_list_wrap.active{
-        //             background-color: $black-1;
-        //         }
-    
-        //         .cen_list{
-        //             display: flex;
-        //             justify-content: space-around;
-        //             flex-wrap: wrap;
-        //             max-width: $max-width;
-        //             margin: 0 auto;
-        //             padding: 1.5rem 0;
-        //         }
-    
-        //     //     .cen_list li{
-        //     //         width: 31%;
-        //     //         margin: 1rem 0;
-        //     //         text-align: center;
-        //     //         font-size: $sub-title-text-1;
-        //     //         color: $white-2;
-        //     //         font-weight: $font-bold;
-        //     //         border-radius: 3px;
-        //     //         border: 1px solid $white-2;
-        //     //         opacity: 0.6;
-        //     //         cursor: pointer;
-        //     //         transition: all 200ms;
-    
-    
-        //     //         a{
-        //     //             display: inline-block;
-        //     //             width: 100%;
-        //     //             height: 100%;
-        //     //             padding: 1.5rem 0;
-        //     //         }
-                  
-        //     //     }
-        //     //     .cen_list li:hover{
-        //     //         color: $white-1;
-        //     //         border: 1px solid $white-1;
-        //     //         opacity: 1;
-        //     //         box-sizing: border-box;
-        //     //   }
-        //    }
-        // }
     }
     
-    
-    .artists_wrap{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        max-width: $max-width;
-        margin: 0 auto;
-        background-color: beige;
-    }
 }
 
 

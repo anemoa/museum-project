@@ -5,11 +5,12 @@
 @import 'base/reset';
 @import 'base/global';
 
+// fonts
+@import './abstracts/fonts';
 
 // Period 페이지 & 컴포넌트
-@import 'component/period/centurybtn';
-@import 'component/period/centurywrap';
 @import 'pages/period';
+
 
 @import 'pages/workofarts';
 

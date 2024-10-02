@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-
-const CenturyBtn = () => {
+const CenturyBtn = ({toggleHandle}) => {
     return (
-        <li>
-            <a href="http://www.naver.com">15th century</a>
-        </li>
+        <div className='century'>
+            <button className='cen_btn' onClick={toggleHandle}>16 Century</button>
+        </div>
     )
-}
+};
 
-export default CenturyBtn
+export default CenturyBtn;

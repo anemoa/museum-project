@@ -1,21 +1,26 @@
-import React from 'react'
-import CenturyBtn from './CenturyBtn'
+import { useEffect, useState } from 'react';
+import CenturyBg from './CenturyBg';
+import CenturyBtn from './CenturyBtn';
 
 const CenturyWrap = () => {
-    return (
-        <div className='cen_bg active'>
-            <div className='cen_list_wrap'>
-                <ul className='cen_list'>
-                    <CenturyBtn />
-                    <CenturyBtn />
-                    <CenturyBtn />
-                    <CenturyBtn />
-                    <CenturyBtn />
-                    <CenturyBtn />
-                </ul>
-            </div>
-        </div>
-    )
-}
+    const [isActive, setIsActive] = useState(false);
+    
+    useEffect( () => {
+        console.log(isActive);
+    }, [isActive]);
 
-export default CenturyWrap
+    const toggleHandle = () => {
+        setIsActive(!isActive);
+    }
+
+    return (
+        <section className='century_container'>
+            <div className='cen_wrap'>
+                <CenturyBtn toggleHandle={toggleHandle}/>
+                <CenturyBg isActive={isActive}/>
+            </div>
+        </section>
+    )
+};
+
+export default CenturyWrap;

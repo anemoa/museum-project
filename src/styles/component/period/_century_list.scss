@@ -1,0 +1,17 @@
+.cen_list_wrap{
+    width: 100%;
+    background-color: $black-1;
+
+    &.cen_list_wrap.active{
+        background-color: $black-1;
+    }
+
+    .cen_list{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 1.5rem 0;
+    }
+}
