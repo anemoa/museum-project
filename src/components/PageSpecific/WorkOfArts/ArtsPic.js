@@ -8,4 +8,4 @@ const ArtsPic = () => {
 	)
 }
 
-export default ArtsPic
+export default ArtsPic;
