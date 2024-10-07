@@ -2,7 +2,9 @@ import React from 'react'
 
 const ArtsSubInfo = () => {
   return (
-		<div>ArtsSubInfo</div>
+		<div>
+			dd
+		</div>
 	)
 }
 

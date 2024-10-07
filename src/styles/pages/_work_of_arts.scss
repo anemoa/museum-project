@@ -1,7 +1,12 @@
-//
+@import '../component/work_of_arts/arts_wrap';
+@import '../component/work_of_arts/arts_pic';
+@import '../component/work_of_arts/arts_info_wrap';
+@import '../component/work_of_arts/arts_info_box';
+@import '../component/work_of_arts/arts_sub_info';
 
 
 
 .container{
-    
+	max-width: $max-width;
+	background-color: red;
 }

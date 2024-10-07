@@ -5,7 +5,7 @@ import ArtsSubInfo from './ArtsSubInfo'
 
 const ArtsWrap = () => {
   return (
-		<article>
+		<article className='arts_wrap'>
 			<ArtsPic />
 			<ArtsInfoBox />
 			<ArtsSubInfo />
@@ -13,4 +13,4 @@ const ArtsWrap = () => {
 	)
 }
 
-export default ArtsWrap
+export default ArtsWrap;

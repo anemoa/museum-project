@@ -1,0 +1,21 @@
+.arts_pic_wrap{
+	display: flex;
+	padding: 0 2.8125rem;
+	background-color: #f9f9f9;
+
+	.art_pic_box{
+		width: 50%;
+		max-width: 750px;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.art_simple_info{
+		width: 50%;
+		padding: 1rem 1.5625rem;
+	}
+
+
+}
