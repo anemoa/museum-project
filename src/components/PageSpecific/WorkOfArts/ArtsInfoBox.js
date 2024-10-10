@@ -2,8 +2,8 @@ import React from 'react'
 
 const ArtsInfoBox = () => {
   return (
-		<div>
-			
+		<div className='arts_info_box'>
+			arts_info_box
 		</div>
 	)
 }

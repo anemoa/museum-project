@@ -5,8 +5,6 @@ import ArtsSubInfo from './ArtsSubInfo'
 const ArtsInfoWrap = () => {
   return (
 	<div className='arts_info_wrap'>
-
-		dd
 		<ArtsInfoBox />
 		<ArtsSubInfo />
 	</div>
