@@ -4,7 +4,7 @@ import ArtsWrap from '../components/PageSpecific/WorkOfArts/ArtsWrap';
 
 const WorkOfArts = () => {
   return (
-    <main className='work_of_arts_container'>
+    <main className='container'>
         <ArtsWrap />
     </main>
   );
