@@ -1,9 +1,11 @@
 import React from 'react'
 
 const MainInfo = () => {
-  return (
-	<div>MainInfo</div>
-  )
+	return (
+		<div>
+			
+		</div>
+	)
 }
 
-export default MainInfo
+export default MainInfo;
