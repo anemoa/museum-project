@@ -1,0 +1,23 @@
+.main_info_box{
+	display: flex;
+	width: 100%;
+
+	.info_box{
+		width: 33.33%;
+		
+		.info_title_Box{
+			margin-bottom: 30px;
+
+			span{
+				font-size: 30px;
+			}
+		}
+
+		.info_con{
+			margin-bottom: 10px;
+			font-size: 18px;
+			line-height: auto;
+		}
+		
+	}
+}

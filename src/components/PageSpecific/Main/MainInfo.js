@@ -3,7 +3,7 @@ import MainDetailInfo from './MainDetailInfo';
 
 const MainInfo = () => {
 	return (
-		<div>
+		<div className='main_info_box'>
 			<MainDetailInfo />
 		</div>
 	)

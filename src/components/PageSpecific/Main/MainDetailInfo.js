@@ -24,23 +24,23 @@ const info = [
 ];
 
 	return (
-		<div>
+		<>
 			{
 				info.map( (item, idx) => (
-					<div key={idx}>
-						<p>
+					<div key={idx} className='info_box'>
+						<p className='info_title_Box'>
 							<i>{item.icon}</i> <span>{item.title}</span>
 						</p>
-						<p>
+						<p className='info_con'>
 							{item.contents1}
 						</p>
-						<p>
+						<p className='info_con'>
 							{item.contents2}
 						</p>
 					</div>
 				 ) )
 			}
-		</div>
+		</>
 	)
 }
 
