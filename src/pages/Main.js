@@ -1,6 +1,6 @@
 import React from 'react'
 import MainVisual from '../components/PageSpecific/Main/MainVisual'
-import MainSlides from '../components/PageSpecific/Main/MainSlides'
+import Slider from '../components/common/Slider';
 import MainInfo from '../components/PageSpecific/Main/MainInfo'
 
 const Main = () => {
@@ -8,11 +8,12 @@ const Main = () => {
     <main>
         <MainVisual />
 		<div className='container'>
-			<MainSlides />
+			<Slider />
 			<MainInfo />
+			<Slider />
 		</div>
     </main>
   )
 }
 
-export default Main
+export default Main;
