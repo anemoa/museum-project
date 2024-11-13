@@ -2,39 +2,46 @@ import React from 'react'
 
 const MainDetailInfo = () => {
 
-const info = [
-	{
-		icon: "www.com",
-		title: "opening hours",
-		contents1: "mon-fri: 09:00~16:00",
-		contents2: "sat-sun: 09:00~15:00"
-	},
-	{
-		icon: "www.nnn",
-		title: "admissions",
-		contents1: "Adults: $25",
-		contents2: "Children & Students: Free"
-	},
-	{
-		icon: "www.dd",
-		title: "find us",
-		contents1: "sssss aveune",
-		contents2: "010101-22522"
-	}
-];
+	const info = [
+		{
+			icon: "material-symbols-outlined",
+			iconInfo: "schedule",
+			title: "opening hours",
+			contents1: "mon-fri: 09:00~17:00",
+			contents2: "sat-sun: 09:00~17:00"
+		},
+		{
+			icon: "material-symbols-outlined",
+			iconInfo: "credit_card",
+			title: "admissions",
+			contents1: "adults: $25",
+			contents2: "children & students: Free"
+		},
+		{
+			icon: "material-symbols-outlined",
+			iconInfo: "map",
+			title: "find us",
+			contents1: "sssss aveune",
+			contents2: "010101-22522"
+		}
+	];
+
 
 	return (
 		<>
 			{
 				info.map( (item, idx) => (
 					<div key={idx} className='info_box'>
-						<p className='info_title_Box'>
-							<i>{item.icon}</i> <span>{item.title}</span>
-						</p>
-						<p className='info_con'>
+						<div className='info_title_Box'>
+							<span className={item.icon}>{item.iconInfo}</span>
+							<div className='info_title'>
+								<span>{item.title}</span>
+							</div>
+						</div>
+						<p className='info_contents'>
 							{item.contents1}
 						</p>
-						<p className='info_con'>
+						<p className='info_contents'>
 							{item.contents2}
 						</p>
 					</div>

@@ -1,0 +1,30 @@
+.info_box{
+	width: 32%;
+	padding: 30px 20px;
+	border: 1px solid $black-1;
+	
+	.info_title_Box{
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.25rem;
+
+
+		.info_title{
+			margin-left: 15px;
+			span{
+				font-size: $contents-text2;
+				font-weight: $font-medium;
+				text-transform: capitalize;
+			}
+
+		}
+	}
+
+	.info_contents{
+		margin-bottom: 10px;
+		font-size: $contents-text;
+		font-weight: $font-light;
+		line-height: auto;
+		text-transform: capitalize;
+	}
+}
