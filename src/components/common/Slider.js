@@ -9,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Link } from 'react-router-dom';
 
 
 
@@ -35,7 +36,7 @@ const Slider = () => {
 			</SwiperSlide>
 			<SwiperSlide>
 				<div className="slide-content">
-				<img src={Windmill} alt="" />
+					<img src={Windmill} alt="" />
 				</div>
 			</SwiperSlide>
 			<SwiperSlide>

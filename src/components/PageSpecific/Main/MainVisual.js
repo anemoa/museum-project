@@ -46,4 +46,4 @@ const MainVisual = () => {
   )
 }
 
-export default MainVisual
+export default MainVisual;
