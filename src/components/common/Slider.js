@@ -9,13 +9,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Link } from 'react-router-dom';
 
 
+const Slider = ({link, img}) => {
 
-const Slider = () => {
 	return (
-
 		<Swiper
 		// Swiper 모듈 설치
 		modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -26,12 +24,14 @@ const Slider = () => {
 		pagination={{ clickable: true }}  // 페이지네이션 활성화
 		scrollbar={{ draggable: true }}  // 스크롤바 활성화
 		onSwiper={(swiper) => console.log(swiper)}  // Swiper 인스턴스 콜백
-		onSlideChange={() => console.log('slide change')}  // 슬라이드 변경 시 콜백
+		// onSlideChange={() => console.log('slide change')}  // 슬라이드 변경 시 콜백
 		autoplay={{delay: 1500}} // 자동 넘김
 	  	>
 			<SwiperSlide>
 				<div className="slide-content">
-					<img src={Windmill} alt="" />
+					<a href={link}>
+						<img src={img} alt="" />
+					</a>
 				</div>
 			</SwiperSlide>
 			<SwiperSlide>

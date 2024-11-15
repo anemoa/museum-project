@@ -20,14 +20,14 @@ const MainVisual = () => {
 		const randomBgIdx = Math.floor(Math.random() * bgArrary.length);
 		setRandomBg(bgArrary[randomBgIdx]);
 
-		console.log('이미지 변경:', new Date().toLocaleTimeString());  // 시간 찍어보기
+		// console.log('이미지 변경:', new Date().toLocaleTimeString());  // 시간 찍어보기
 	}
 
 
 	useEffect( () => {
 		// 4. 처음에 한 번 이미지가 보이게 실행
 		showImage();
-		console.log('첫 실행:', new Date().toLocaleTimeString());
+		// console.log('첫 실행:', new Date().toLocaleTimeString());
 
 		// 5. showImage()가 3초마다 실행되도록 설정
 		const timer = setInterval(showImage, 3000);
