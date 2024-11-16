@@ -11,7 +11,7 @@ const Main = () => {
 		<div className='container'>
 			<Slider link={"https://www.naver.com"} img={"https://lh3.googleusercontent.com/CKrxLJqyzjzEg8YAvWgYtJnXLTaNSnHcC4XjYQmhPSHMxIwLQfL2F-mVIi9relG9CX0QrZ6cLysAqNZafu9aFPT6w1pC=w400"} />
 			<MainInfo />
-			<Slider />
+			<Slider link={"https://www.google.co.kr"}/>
 			<MainMap />
 		</div>
     </main>
