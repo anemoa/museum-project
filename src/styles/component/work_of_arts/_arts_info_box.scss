@@ -1,4 +1,16 @@
 .arts_info_box{
 	width: 50%;
 	background-color: yellow;
+
+	.sub_info_box{
+		margin-bottom: 1rem;
+
+		.sub_info_title{
+			font-weight: $font-bold;
+		}
+
+		.sub_info_value{
+			margin-top: 5px;
+		}
+	}
 }
