@@ -1,0 +1,10 @@
+@import '../component/artists/artists_default_img';
+@import '../component/artists/artists_info_box';
+@import '../component/artists/artists_wrap';
+
+
+h2{
+	margin: 4rem 0;
+	font-size: $title-text;
+	text-align: center;
+}

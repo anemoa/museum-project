@@ -1,0 +1,33 @@
+.artists_info_box{
+	width: 55%;
+	padding: 30px 40px;
+
+	.artist_name{
+		font-size: $title-text;
+	}
+
+	.birth_box{
+		display: flex;
+		margin-top: 1.5rem;
+
+		div{
+			width: 45%;
+
+			.birth_txt{
+				font-size: $contents-text-m;
+				text-transform: uppercase;
+			}
+
+			.birth_year{
+				margin-top: 10px;
+				font-size: $sub-title-text-2;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.desc_box{
+		margin-top: 1.5rem;
+	}
+
+}

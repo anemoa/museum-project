@@ -25,7 +25,7 @@ const Slider = ({link, img}) => {
 		scrollbar={{ draggable: true }}  // 스크롤바 활성화
 		onSwiper={(swiper) => console.log(swiper)}  // Swiper 인스턴스 콜백
 		// onSlideChange={() => console.log('slide change')}  // 슬라이드 변경 시 콜백
-		autoplay={{delay: 1500}} // 자동 넘김
+		autoplay={{delay: 2000}} // 자동 넘김
 	  	>
 			<SwiperSlide>
 				<div className="slide-content">
