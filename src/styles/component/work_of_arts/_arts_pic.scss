@@ -14,6 +14,26 @@
 	.art_simple_info{
 		width: 50%;
 		padding: 1rem 1.5625rem;
+
+		h2{
+			font-size: $sub-title-text-3;
+			margin: 0;
+			text-align: left;
+		}
+
+		.art_info_box{
+			margin-top: 1.5rem;
+
+			.info_title{
+				font-size: $contents-text2;
+				font-weight: $font-bold;
+			}
+
+			.info_value{
+				margin-top: 5px;
+				font-size: $contents-text2;
+			}
+		}
 	}
 
 

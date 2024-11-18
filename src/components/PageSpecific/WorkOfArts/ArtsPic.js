@@ -9,27 +9,27 @@ const ArtsPic = () => {
 			</div>
 
 			<div className='art_simple_info'>
-				<p className=''>
-					Windmill in the area
-				</p>
+				<h2 className='art_title'>
+					Windmill blahblah
+				</h2>
 
-				<p>
-					<p>
+				<div className='art_info_box'>
+					<strong className='info_title'>
 						Maker
-					</p>
-					<p>
+					</strong>
+					<p className='info_value'>
 						Mike Brown
 					</p>
-				</p>
-				
-				<p>
-					<p>
+				</div>
+
+				<div className='art_info_box'>
+					<strong className='info_title'>
 						Production date
+					</strong>
+					<p className='info_value'>
+						1996
 					</p>
-					<p>
-						1966
-					</p>
-				</p>
+				</div>
 			</div>
 		</div>
 	)
