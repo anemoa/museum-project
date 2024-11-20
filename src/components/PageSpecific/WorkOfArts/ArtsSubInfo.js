@@ -42,7 +42,7 @@ const artsInfo = [
 const ContentRender = ({content}) => {
 	switch (content.type){
 		case 'link':
-			return <Link to={content.to}>{content.text}</Link>;
+			return <Link to={content.to} className='artist_btn'>{content.text}</Link>;
 		case 'text':
 			return <p>{content.text}</p>;
 		case 'links':

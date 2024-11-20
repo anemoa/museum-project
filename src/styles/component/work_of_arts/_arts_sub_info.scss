@@ -4,11 +4,14 @@
 	border-left: 1px solid #e8e8e8;
 
 	.arts_sub_info_box{
-
 		margin-bottom: 30px;
 
+		.artist_btn{
+			color: $gray-2;
+		}
+
 		.sub_info_title{
-			margin-bottom: 1rem;
+			margin-bottom: 10px;
 			font-size: $sub-title-text-1;
 			font-weight: $font-bold;
 		}

@@ -6,7 +6,7 @@ const ArtsInfoWrap = () => {
   return (
 
 	<>
-		<h2>dddd</h2>	
+		<h2>object detail</h2>	
 		<div className='arts_info_wrap'>
 			<ArtsInfoBox />
 			<ArtsSubInfo />

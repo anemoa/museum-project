@@ -1,6 +1,7 @@
 h2{
 	margin: 3rem 0;
 	text-align: left;
+	text-transform: capitalize;
 }
 
 .arts_info_box{
@@ -8,14 +9,15 @@ h2{
 	padding-right: 2rem;
 
 	.sub_info_box{
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
 
 		.sub_info_title{
+			font-size: $sub-title-text-1;
 			font-weight: $font-bold;
 		}
 
 		.sub_info_value{
-			margin-top: 5px;
+			margin-top: 10px;
 		}
 	}
 }
