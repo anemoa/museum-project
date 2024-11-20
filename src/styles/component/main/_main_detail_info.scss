@@ -8,9 +8,13 @@
 		align-items: center;
 		margin-bottom: 1.25rem;
 
+		.info_icon{
+			width: 25px;
+			height: 25px;
+		}
 
 		.info_title{
-			margin-left: 15px;
+			margin-left: 10px;
 			span{
 				font-size: $contents-text2;
 				font-weight: $font-medium;

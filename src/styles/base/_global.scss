@@ -1,3 +1,9 @@
+@use '../abstracts/fonts/' as *;
+
+*{
+	@include garamond(400);
+}
+
 img{
 	width: 100%;
 }
