@@ -6,7 +6,12 @@ import MainMap from '../components/PageSpecific/Main/MainMap';
 
 
 
-const slideArtist = ['Marcantonio Raimondi', 'Johannes Vermeer', 'Jan Caspar Philips', 'Jan Adam Kruseman' ];
+const slideArtist = [
+	{name: 'Marcantonio Raimondi', objId: 'RP-P-OB-12.086'}, 
+	{name: 'Johannes Vermeer', objId: ''}, 
+	{name: 'Jan Caspar Philips', objId: ''}, 
+	{name: 'Jan Adam Kruseman', objId: ''}
+];
 
 const slideArtwork = [];
 
@@ -14,7 +19,7 @@ const Main = () => {
   return (
     <main>
         <MainVisual />
-		<div className='container'>
+		<div className="container">
 			<Slider artists={slideArtist} />
 			<MainInfo />
 			<Slider />

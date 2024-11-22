@@ -35,7 +35,7 @@ const Slider = ({artists, img}) => {
 				artists?.map( (artist, idx) => (
 					<SwiperSlide key={idx}>
 						<div className="slide-content">
-							<Link to={`artists/${artist}`}>
+							<Link to={`/artists/${artist.name}`} state={{objId: artist.objId}}>
 								<img src={Windmill} alt="" />
 							</Link>
 						</div>
