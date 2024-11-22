@@ -9,9 +9,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Link } from 'react-router-dom';
 
 
-const Slider = ({link, img}) => {
+const Slider = ({artists, img}) => {
+
+	console.log(artists);
+	
 
 	return (
 		<Swiper
@@ -23,32 +27,21 @@ const Slider = ({link, img}) => {
 		// navigation              // 네비게이션 화살표 활성화
 		pagination={{ clickable: true }}  // 페이지네이션 활성화
 		scrollbar={{ draggable: true }}  // 스크롤바 활성화
-		onSwiper={(swiper) => console.log(swiper)}  // Swiper 인스턴스 콜백
+		// onSwiper={(swiper) => console.log(swiper)}  // Swiper 인스턴스 콜백
 		// onSlideChange={() => console.log('slide change')}  // 슬라이드 변경 시 콜백
 		autoplay={{delay: 2000}} // 자동 넘김
 	  	>
-			<SwiperSlide>
-				<div className="slide-content">
-					<a href={link}>
-						<img src={img} alt="" />
-					</a>
-				</div>
-			</SwiperSlide>
-			<SwiperSlide>
-				<div className="slide-content">
-					<img src={Windmill} alt="" />
-				</div>
-			</SwiperSlide>
-			<SwiperSlide>
-				<div className="slide-content">
-					<img src={Windmill} alt="" />
-				</div>
-			</SwiperSlide>
-			<SwiperSlide>
-				<div className="slide-content">
-					<img src={Windmill} alt="" />
-				</div>
-			</SwiperSlide>
+			{
+				artists?.map( (artist, idx) => (
+					<SwiperSlide key={idx}>
+						<div className="slide-content">
+							<Link to={`artists/${artist}`}>
+								<img src={Windmill} alt="" />
+							</Link>
+						</div>
+					</SwiperSlide>
+				) )
+			}
 		</Swiper>
 	)
 }
