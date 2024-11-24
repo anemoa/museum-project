@@ -31,7 +31,7 @@ const Artists = () => {
 		} catch (error){
 			console.log(error);
 		}
-	}
+	};
 
 	getArtist();
 
