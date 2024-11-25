@@ -1,10 +1,16 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 
 
-const ArtistsInfoBox = () => {
+const ArtistsInfoBox = ({artistname}) => {
+
+	console.log('infobox>>>', artistname);
+	
+
+
   return (
 	<div className='artists_info_box'>
-		<p className='artist_name'>Johannes Vermeer</p>
+		<p className='artist_name'>{artistname}</p>
 
 		<div className='birth_box'>
 			<div>

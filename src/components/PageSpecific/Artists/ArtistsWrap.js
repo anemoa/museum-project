@@ -2,11 +2,14 @@ import React from 'react';
 import ArtistsInfoBox from './ArtistsInfoBox';
 import ArtistsDefaultImg from './ArtistsDefaultImg';
 
-const ArtistsWrap = () => {
+const ArtistsWrap = ({artistname}) => {
+
+	console.log(artistname);
+	
   return (
 	<div className='artists_wrap'>
 		<ArtistsDefaultImg />
-		<ArtistsInfoBox />
+		<ArtistsInfoBox  artistname={artistname}/>
 	</div>
   )
 }

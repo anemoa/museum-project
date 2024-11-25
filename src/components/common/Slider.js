@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Link } from 'react-router-dom';
-import { CardDefault, SimpleCard } from './Card';
+import { CardDefault } from './Card';
 
 
 const Slider = ({artists, img}) => {
@@ -35,17 +35,12 @@ const Slider = ({artists, img}) => {
 			{
 				artists?.map( (artist, idx) => (
 					<SwiperSlide key={idx}>
-						<div className="slide-content">
-							<Link to={`/artists/${artist.name}`} state={{objId: artist.objId}}>
-								<img src={Windmill} alt="" />
-							</Link>
-						</div>
+						<Link to={`/artists/${artist.name}`} state={{objId: artist.objId}}>
+							<CardDefault name={artist.name} />
+						</Link>
 					</SwiperSlide>
 				) )
 			}
-			<SwiperSlide>
-				<CardDefault />
-			</SwiperSlide>
 		</Swiper>
 	)
 }

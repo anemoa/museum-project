@@ -37,7 +37,7 @@ const Artists = () => {
 
 	return (
 		<main className='container'>
-			<ArtistsWrap />
+			<ArtistsWrap artistname={artistId}/>
 
 			<h2>Work of Arts</h2>
 			
