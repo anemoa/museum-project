@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Link } from 'react-router-dom';
+import { CardDefault, SimpleCard } from './Card';
 
 
 const Slider = ({artists, img}) => {
@@ -42,6 +43,9 @@ const Slider = ({artists, img}) => {
 					</SwiperSlide>
 				) )
 			}
+			<SwiperSlide>
+				<CardDefault />
+			</SwiperSlide>
 		</Swiper>
 	)
 }

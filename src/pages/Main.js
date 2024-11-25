@@ -3,6 +3,8 @@ import MainVisual from '../components/PageSpecific/Main/MainVisual'
 import Slider from '../components/common/Slider';
 import MainInfo from '../components/PageSpecific/Main/MainInfo'
 import MainMap from '../components/PageSpecific/Main/MainMap';
+import SimpleCard from '../components/common/Card';
+
 
 
 
