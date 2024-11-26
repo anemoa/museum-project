@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import { CardDefault } from './Card';
 
 
-const Slider = ({artists, img}) => {
+const Slider = ({artists, arts}) => {
 
 	console.log(artists);
 	
@@ -33,13 +33,19 @@ const Slider = ({artists, img}) => {
 		autoplay={{delay: 2000}} // 자동 넘김
 	  	>
 			{
-				artists?.map( (artist, idx) => (
+				artists ? artists.map( (artist, idx) => (
 					<SwiperSlide key={idx}>
 						<Link to={`/artists/${artist.name}`} state={{objId: artist.objId}}>
 							<CardDefault name={artist.name} />
 						</Link>
 					</SwiperSlide>
-				) )
+				) ) : arts.map((art, idx) => (
+					<SwiperSlide key={idx}>
+						<Link to={`/work-of-arts/${art.name}`} state={{objId: art.objId}}>
+							<CardDefault name={art.name} />
+						</Link>
+					</SwiperSlide>
+				))
 			}
 		</Swiper>
 	)

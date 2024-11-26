@@ -15,7 +15,12 @@ const slideArtist = [
 	{name: 'Jan Adam Kruseman', objId: ''}
 ];
 
-const slideArtwork = [];
+const slideArtwork = [
+	{name: 'recomment01', objId: 'dssss0'},
+	{name: 'recomment02', objId: 'dssss1'},
+	{name: 'recomment03', objId: 'dssss2'},
+	{name: 'recomment04', objId: 'dssss3'},
+];
 
 const Main = () => {
   return (
@@ -24,7 +29,7 @@ const Main = () => {
 		<div className="container">
 			<Slider artists={slideArtist} />
 			<MainInfo />
-			<Slider />
+			<Slider arts={slideArtwork}/>
 			<MainMap />
 		</div>
     </main>
