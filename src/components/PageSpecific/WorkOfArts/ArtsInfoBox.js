@@ -6,8 +6,8 @@ const artsDetail = [
 		content: '122x133 cm'
 	},
 	{
-		title: 'Credit line',
-		content: 'sdjklsfdjklsdf',
+		title: 'Place',
+		content: 'sdfdf',
 	},
 	{
 		title: 'Description',

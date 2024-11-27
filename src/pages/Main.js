@@ -16,7 +16,7 @@ const slideArtist = [
 ];
 
 const slideArtwork = [
-	{name: 'recomment01', objId: 'dssss0'},
+	{name: 'recomment01', objId: 'SK-C-5'},
 	{name: 'recomment02', objId: 'dssss1'},
 	{name: 'recomment03', objId: 'dssss2'},
 	{name: 'recomment04', objId: 'dssss3'},

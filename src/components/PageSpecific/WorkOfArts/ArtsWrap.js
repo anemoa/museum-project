@@ -2,18 +2,19 @@ import React from 'react'
 import ArtsPic from './ArtsPic'
 import ArtsInfoBox from './ArtsInfoBox'
 import ArtsSubInfo from './ArtsSubInfo'
-import ArtsInfoWrap from './ArtsInfoWrap'
-import { useLocation } from 'react-router-dom'
+import ArtsInfoWrap from './ArtsInfoWrap';
 
-const ArtsWrap = () => {
+const ArtsWrap = (props) => {
 
-	const location = useLocation();
-	const objId = location.state ? location.state.objId : undefined;
-
-	console.log('이건 작품 ID야!!>>' , objId);
+	console.log(props);
+	
+	// const {material,artistName, artTitle, productDate, measuer, description, place, birthDate, deathDate} = props;
+	// console.log(material);
+	
+	
 	
 
-  return (
+	return (
 		<article className='arts_wrap'>
 			<ArtsPic />
 			<ArtsInfoWrap />
