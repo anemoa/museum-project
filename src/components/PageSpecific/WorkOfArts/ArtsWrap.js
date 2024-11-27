@@ -7,8 +7,9 @@ import ArtsInfoWrap from './ArtsInfoWrap';
 const ArtsWrap = (props) => {
 
 	console.log(props);
+
 	
-	// const {material,artistName, artTitle, productDate, measuer, description, place, birthDate, deathDate} = props;
+	const {material,artistName, artTitle, productDate, image ,measuer, description, place, birthDate, deathDate} = props;
 	// console.log(material);
 	
 	
@@ -16,8 +17,8 @@ const ArtsWrap = (props) => {
 
 	return (
 		<article className='arts_wrap'>
-			<ArtsPic />
-			<ArtsInfoWrap />
+			<ArtsPic picInfo={{ title: artTitle, artist: artistName, date: productDate, img: image }}/>
+			<ArtsInfoWrap picInfo={{artist: artistName, material: material, measuer: measuer, desc: description, place: place}} />
 		</article>
 	)
 }

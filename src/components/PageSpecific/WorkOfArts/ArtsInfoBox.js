@@ -1,25 +1,30 @@
 import React from 'react';
 
-const artsDetail = [
-	{
-		title: 'Measurements',
-		content: '122x133 cm'
-	},
-	{
-		title: 'Place',
-		content: 'sdfdf',
-	},
-	{
-		title: 'Description',
-		content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati dolorem ab veniam consectetur fugit perferendis nemo? Quae, pariatur tenetur possimus velit eum dolore provident distinctio nihil hic non unde!',
-	}
 
-];
 
-const ArtsInfoBox = () => {
-  return (
+const ArtsInfoBox = ({objInfo}) => {
+
+	const {measuer, place, desc} = objInfo;
+
+	const artsDetail = [
+		{
+			title: 'Measurements',
+			content: `${objInfo.measuer}`
+		},
+		{
+			title: 'Place',
+			content: `${objInfo.place}`
+		},
+		{
+			title: 'Description',
+			content: `${objInfo.desc}`
+		}
+	
+	];
+
+	
+  	return (
 		<div className="arts_info_box">
-
 			{
 				artsDetail.map( (art, idx) => (
 					<div key={idx} className="sub_info_box">
