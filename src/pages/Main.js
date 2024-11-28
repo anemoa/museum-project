@@ -10,15 +10,15 @@ import SimpleCard from '../components/common/Card';
 
 const slideArtist = [
 	{name: 'Marcantonio Raimondi', objId: 'RP-P-OB-12.086'}, 
-	{name: 'Johannes Vermeer', objId: ''}, 
-	{name: 'Jan Caspar Philips', objId: ''}, 
-	{name: 'Jan Adam Kruseman', objId: ''}
+	{name: 'Johannes Vermeer', objId: 'ssdd'}, 
+	{name: 'Jan Caspar Philips', objId: 'fddd'}, 
+	{name: 'Jan Adam Kruseman', objId: 'fdsfsdf'}
 ];
 
 const slideArtwork = [
 	{name: 'recomment01', objId: 'SK-C-5'},
-	{name: 'recomment02', objId: 'dssss1'},
-	{name: 'recomment03', objId: 'dssss2'},
+	{name: 'recomment02', objId: 'RP-P-OB-12.086'},
+	{name: 'recomment03', objId: 'SK-C-1368'},
 	{name: 'recomment04', objId: 'dssss3'},
 ];
 

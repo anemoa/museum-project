@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ArtistsWrap from '../components/PageSpecific/Artists/ArtistsWrap'
 import Slider from '../components/common/Slider';
 import { useLocation, useParams } from 'react-router-dom';
@@ -17,23 +17,14 @@ const Artists = () => {
 	console.log(artistId);
 	console.log(objId);
 
-
-
-
-	const getArtist = async () => {
-		try{
-			const response = await axios.get(`${API_BASE_URL}collection/${objId}?key=${api_key}`);
-			console.log(response.data.artObject.principalMakers[0]);
+	useEffect( () => {
+		const response = async () => {
 			
-			const detail = response.data.artObject.principalMakers[0];
-			console.log(detail);
-			
-		} catch (error){
-			console.log(error);
 		}
-	};
 
-	getArtist();
+	}, [objId]);
+
+
 
 	return (
 		<main className='container'>

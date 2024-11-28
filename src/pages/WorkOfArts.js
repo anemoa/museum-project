@@ -16,14 +16,14 @@ const WorkOfArts = () => {
 			const artData = response.data.artObject;
 			const artDetail = response.data.artObject.principalMakers[0];
 			
-			console.log('webImage >>>', artData.webImage.url);
+			console.log('webImage >>>', artData);
 			
 
 			setArtDatas({
 				material: artData.materials[0], // 그림인지 도자기인지
 				artistName: artData.principalMaker, // 화가 이름
 				artTitle: artData.title, // 그림 이름
-				productDate: artData.dating.presentingDate, // 만든 년도
+				productDate: artData.dating.yearLate, // 만든 년도
 				measuer: artData.subTitle, // 작품 크기
 				description: artData.description, // 작품 설명
 				place: artData.classification.places[0], // 작품이 만들어진 장소

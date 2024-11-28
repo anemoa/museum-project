@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import Windmill from '../../assets/images/windmill.png';
@@ -15,7 +15,10 @@ import { CardDefault } from './Card';
 
 const Slider = ({artists, arts}) => {
 
-	console.log(artists);
+	useEffect(() => {
+			console.log(artists);
+		}, [artists]
+	);
 	
 
 	return (
@@ -39,7 +42,7 @@ const Slider = ({artists, arts}) => {
 							<CardDefault name={artist.name} />
 						</Link>
 					</SwiperSlide>
-				) ) : arts.map((art, idx) => (
+				) ) : arts?.map((art, idx) => (
 					<SwiperSlide key={idx}>
 						<Link to={`/work-of-arts/${art.name}`} state={{objId: art.objId}}>
 							<CardDefault name={art.name} />
