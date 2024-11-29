@@ -26,32 +26,37 @@ const Period = () => {
 
 			const baseData = response.data.artObjects;
 
+			// 화가 이름을 처리하는 함수
 			const processArtistName = (name) => {
+				// , 기준으로 분리하고 첫 번째 이름만 사용
 				const names = name.split(',');
-
+				
+				// 앞 뒤 여백 삭제
 				return names[0].trim();
 			};
 			
-
+			// 화가 데이터 처리
 			const processData = baseData.map( (data, idx) => {
 				return {
 					...data,
 					principalOrFirstMaker: processArtistName(data.principalOrFirstMaker)
 				};
 			});
-
 			console.log(processData);
 
+			// 화가 이름 중복 처리
 			const uniqueName = processData.filter((obj, idx, self) => 
 				idx === self.findIndex(name => name.principalOrFirstMaker === obj.principalOrFirstMaker)
 			);
 
+			// 중복 이름 제거하기
 			const artistLists = uniqueName.filter(name => name.principalOrFirstMaker !== 'anonymous')
 			.map(name => name.principalOrFirstMaker);
 
 			console.log(artistLists);
 			
-			setArtistData(artistLists)
+			// 변경된 화가 이름 상태 업데이트
+			setArtistData(artistLists);
 			
 		}catch(error){
 			console.log('error >>', error);

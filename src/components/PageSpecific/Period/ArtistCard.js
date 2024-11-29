@@ -3,7 +3,7 @@ import Windmill from '../../../assets/images/windmill.png';
 
 const ArtistCard = ({painter, idx}) => {
 
-	console.log('painter >>>', painter, idx);
+	//console.log('painter >>>', painter, idx);
 
 	let idx1 = Number(idx+1);
 	

@@ -3,7 +3,7 @@ import ArtistCard from './ArtistCard';
 
 const ArtistsWrap = ({artistData}) => {
 
-	console.log('artistData >>', artistData);
+	//console.log('artistData >>', artistData);
 	
 
     return (
