@@ -1,5 +1,6 @@
 import React from 'react';
 import Windmill from '../../../assets/images/windmill.png';
+import { Link } from 'react-router-dom';
 
 const ArtistCard = ({painter, idx}) => {
 
@@ -10,15 +11,17 @@ const ArtistCard = ({painter, idx}) => {
 
 	return (
 		<article className="artist_card">
-		    <div className="artist_box">
-		    	<p className="artist_num">
-					{idx1 <= 9 ? '0' + idx1 : idx1 }
-				</p>
-		        <p className='artist_name'>{painter}</p>
-		    </div>
-		    <div className="pic_box">
-		        <img src={Windmill} alt="" />
-		    </div>
+			<Link to={'/artists/:artistId'}>
+				<div className="artist_box">
+					<p className="artist_num">
+						{idx1 <= 9 ? '0' + idx1 : idx1 }
+					</p>
+					<p className='artist_name'>{painter}</p>
+				</div>
+				<div className="pic_box">
+					<img src={Windmill} alt="" />
+				</div>
+			</Link>
 		</article>
 	)
 }
