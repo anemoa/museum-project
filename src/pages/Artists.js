@@ -14,8 +14,10 @@ const Artists = () => {
 	const location = useLocation();
 	const objId = location.state ? location.state.objId : undefined;
 	
-	console.log(artistId);
+	console.log('artistId >>>', artistId);
 	console.log(objId);
+	
+	
 
 	useEffect( () => {
 		const response = async () => {

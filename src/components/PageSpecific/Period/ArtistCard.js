@@ -11,7 +11,7 @@ const ArtistCard = ({painter, idx}) => {
 
 	return (
 		<article className="artist_card">
-			<Link to={'/artists/:artistId'}>
+			<Link to={`/artists/${painter}`}>
 				<div className="artist_box">
 					<p className="artist_num">
 						{idx1 <= 9 ? '0' + idx1 : idx1 }
