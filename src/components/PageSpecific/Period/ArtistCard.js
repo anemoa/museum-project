@@ -2,7 +2,7 @@ import React from 'react';
 import Windmill from '../../../assets/images/windmill.png';
 import { Link } from 'react-router-dom';
 
-const ArtistCard = ({painter, idx}) => {
+const ArtistCard = ({painter, idx, image}) => {
 
 	//console.log('painter >>>', painter, idx);
 
@@ -19,7 +19,7 @@ const ArtistCard = ({painter, idx}) => {
 					<p className='artist_name'>{painter}</p>
 				</div>
 				<div className="pic_box">
-					<img src={Windmill} alt="" />
+					<img src={image} alt="" />
 				</div>
 			</Link>
 		</article>

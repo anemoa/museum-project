@@ -17,14 +17,16 @@ const Period = () => {
 
 	const [selectedCentury, setSelectedCenty] = useState(btnList[0].period);
 	const [selectedCenturyNum, setSelectedCenturyNum] = useState(btnList[0].number);
-	const [artistData, setArtistData] = useState([]);
-
+	const [artistsImg, setArtistsImg] = useState([]);
 
 	const fetchArtists = async () => {
 		try{
 			const response = await axios.get(`${API_BASE_URL}collection?key=${api_key}&f.dating.period=${selectedCenturyNum}&ps=30`);
 
 			const baseData = response.data.artObjects;
+
+			// console.log('baseData >>', baseData);
+			
 
 			// 화가 이름을 처리하는 함수
 			const processArtistName = (name) => {
@@ -42,21 +44,38 @@ const Period = () => {
 					principalOrFirstMaker: processArtistName(data.principalOrFirstMaker)
 				};
 			});
-			console.log(processData);
+			//console.log('processData >>>', processData);
 
 			// 화가 이름 중복 처리
 			const uniqueName = processData.filter((obj, idx, self) => 
 				idx === self.findIndex(name => name.principalOrFirstMaker === obj.principalOrFirstMaker)
 			);
 
-			// 중복 이름 제거하기
+			console.log('유니크 네임', uniqueName);
+			
+
+			// anonymous 이름 제거하기
 			const artistLists = uniqueName.filter(name => name.principalOrFirstMaker !== 'anonymous')
 			.map(name => name.principalOrFirstMaker);
 
-			console.log(artistLists);
+			// console.log('artistLists >>>', artistLists);
+
+			const artistImgData = uniqueName.filter(artist => artistLists.includes(artist.principalOrFirstMaker))
+									.map( (artist) =>({
+										name: artist.principalOrFirstMaker,
+										img: artist.webImage?.url || null,
+										id: artist.id,
+										title: artist.title
+								  	}));
+
+			console.log('artistImgData >>', artistImgData);
 			
-			// 변경된 화가 이름 상태 업데이트
-			setArtistData(artistLists);
+			
+			// 변경된 화가 이름, 작품 상태 업데이트
+			setArtistsImg(artistImgData);
+
+			console.log(artistsImg);
+			
 			
 		}catch(error){
 			console.log('error >>', error);
@@ -71,7 +90,7 @@ const Period = () => {
 	return (
 		<main className='container'>
         	<CenturyWrap />
-        	<ArtistsWrap artistData={artistData}/>
+        	<ArtistsWrap artistsImg={artistsImg}/>
     	</main>
 	)
 }

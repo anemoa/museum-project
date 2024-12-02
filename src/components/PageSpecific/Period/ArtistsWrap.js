@@ -1,15 +1,15 @@
 import React from 'react';
 import ArtistCard from './ArtistCard';
 
-const ArtistsWrap = ({artistData}) => {
+const ArtistsWrap = ({artistsImg}) => {
 
-	//console.log('artistData >>', artistData);
+	console.log('artistsImg >>', artistsImg);
 	
 
     return (
         <section className='artists_wrap'>
             {
-                artistData.map( (artist, idx) => <ArtistCard key={idx} idx={idx} painter={artist}/> )
+                artistsImg.map( (artist, idx) => <ArtistCard key={idx} idx={idx} painter={artist.name} image={artist.img} /> )
             }
         </section>
     )
