@@ -3,7 +3,7 @@ import ArtistCard from './ArtistCard';
 
 const ArtistsWrap = ({artistsImg}) => {
 
-	console.log('artistsImg >>', artistsImg);
+	// console.log('artistsImg >>', artistsImg);
 	
 
     return (

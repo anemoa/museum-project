@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const CenturyBtn = ({toggleHandle}) => {
+const CenturyBtn = ({toggleHandle, century}) => {
     return (
         <div className='century'>
-            <button className='cen_btn' onClick={toggleHandle}>16 Century</button>
+            <button className='cen_btn' onClick={toggleHandle}>{century}</button>
         </div>
     )
 };

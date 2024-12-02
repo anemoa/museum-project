@@ -7,12 +7,12 @@ import { API_BASE_URL, api_key } from '../utils/apiConfig';
 
 const Period = () => {
 	const btnList = [
-		{'period': '15th century', 'number': 15},
-		{'period': '16th century', 'number': 16},
-		{'period': '17th century', 'number': 17},
-		{'period': '18th century', 'number': 18},
-		{'period': '19th century', 'number': 19},
-		{'period': '20th century', 'number': 20},
+		{'period': '15th Century', 'number': 15},
+		{'period': '16th Century', 'number': 16},
+		{'period': '17th Century', 'number': 17},
+		{'period': '18th Century', 'number': 18},
+		{'period': '19th Century', 'number': 19},
+		{'period': '20th Century', 'number': 20},
 	];
 
 	const [selectedCentury, setSelectedCenty] = useState(btnList[0].period);
@@ -51,7 +51,7 @@ const Period = () => {
 				idx === self.findIndex(name => name.principalOrFirstMaker === obj.principalOrFirstMaker)
 			);
 
-			console.log('유니크 네임', uniqueName);
+			// console.log('유니크 네임', uniqueName);
 			
 
 			// anonymous 이름 제거하기
@@ -68,13 +68,13 @@ const Period = () => {
 										title: artist.title
 								  	}));
 
-			console.log('artistImgData >>', artistImgData);
+			// console.log('artistImgData >>', artistImgData);
 			
 			
 			// 변경된 화가 이름, 작품 상태 업데이트
 			setArtistsImg(artistImgData);
 
-			console.log(artistsImg);
+			// console.log(artistsImg);
 			
 			
 		}catch(error){
@@ -86,10 +86,14 @@ const Period = () => {
 		fetchArtists(selectedCenturyNum);
 	}, [selectedCenturyNum] );
 
+	const handleCenturyChange = (period, number) => {
+		setSelectedCenty(period);
+		setSelectedCenturyNum(number);
+	}
 
 	return (
 		<main className='container'>
-        	<CenturyWrap />
+        	<CenturyWrap century ={{btnList, selectedCentury, selectedCenturyNum}} onCenturyChange={handleCenturyChange} />
         	<ArtistsWrap artistsImg={artistsImg}/>
     	</main>
 	)
