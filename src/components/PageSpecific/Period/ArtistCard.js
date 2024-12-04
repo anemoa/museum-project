@@ -1,5 +1,4 @@
 import React from 'react';
-import Windmill from '../../../assets/images/windmill.png';
 import { Link } from 'react-router-dom';
 
 const ArtistCard = ({painter, idx, image}) => {
@@ -7,7 +6,6 @@ const ArtistCard = ({painter, idx, image}) => {
 	//console.log('painter >>>', painter, idx);
 
 	let idx1 = Number(idx+1);
-	
 
 	return (
 		<article className="artist_card">

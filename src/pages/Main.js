@@ -3,14 +3,13 @@ import MainVisual from '../components/PageSpecific/Main/MainVisual'
 import Slider from '../components/common/Slider';
 import MainInfo from '../components/PageSpecific/Main/MainInfo'
 import MainMap from '../components/PageSpecific/Main/MainMap';
-import SimpleCard from '../components/common/Card';
 
 
 
 
 const slideArtist = [
 	{name: 'Marcantonio Raimondi', objId: 'RP-P-OB-12.086'}, 
-	{name: 'Johannes Vermeer', objId: 'ssdd'}, 
+	{name: 'Johannes Vermeer', objId: 'SK-C-1368'}, 
 	{name: 'Jan Caspar Philips', objId: 'fddd'}, 
 	{name: 'Jan Adam Kruseman', objId: 'fdsfsdf'}
 ];

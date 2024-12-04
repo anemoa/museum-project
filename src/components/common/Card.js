@@ -9,7 +9,7 @@ import {
    
   export function CardDefault({name}) {
 
-	console.log('name >>>>>', name);
+	// console.log('name >>>>>', name);
 	
 
 	return (

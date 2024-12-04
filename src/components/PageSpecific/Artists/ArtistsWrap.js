@@ -2,14 +2,18 @@ import React from 'react';
 import ArtistsInfoBox from './ArtistsInfoBox';
 import ArtistsDefaultImg from './ArtistsDefaultImg';
 
-const ArtistsWrap = ({artistname}) => {
+const ArtistsWrap = ({info}) => {
 
-	console.log(artistname);
+	const {data, description, webImgUrl} = info;
+	// console.log('info >>', data, description);
+
+	// console.log(data.name);
+	
 	
   return (
 	<div className='artists_wrap'>
-		<ArtistsDefaultImg />
-		<ArtistsInfoBox  artistname={artistname}/>
+		<ArtistsDefaultImg img={webImgUrl}/>
+		<ArtistsInfoBox info={[data.name, data.dateOfBirth, data.dateOfDeath, description]}/>
 	</div>
   )
 }
