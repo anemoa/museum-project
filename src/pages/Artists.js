@@ -19,24 +19,50 @@ const Artists = () => {
 	});
 
 
-	console.log('artistId >>>', artistId);
-	console.log('Artist objId >>', objId);
+	// console.log('artistId >>>', artistId);
+	// console.log('Artist objId >>', objId);
 	
-	const artistName = artistId.replace(' ', '+');
+	const artistName = artistId.replace(/\s+/g, '+');
 	
 	useEffect( () => {
 		const artistDesc = async () => {
-
+			console.log(artistName);
+			
 			try{
-				const response = await axios.get(`${API_BASE_URL}collection/${objId}?key=${api_key}`);
-	
-				console.log('ARtists response', response.data.artObject.webImage.url);
-				
-				const description = response.data.artObject.description || '';
-				const data = response.data.artObject.principalMakers[0] || null;
-				const webImgUrl = response.data.artObject.webImage.url || '';
-	
-				setInfo({data ,description, webImgUrl});
+
+				if(!objId){
+					const searchRes = await axios.get(`${API_BASE_URL}collection?key=${api_key}&involvedMaker=${artistName}`);
+					console.log('searchRes >>>', searchRes);
+					const foundObjId = searchRes.data.artObjects[0]?.objectNumber;
+
+					console.log(foundObjId);
+
+					if(foundObjId){
+						const detailRes = await axios.get(`${API_BASE_URL}collection/${foundObjId}?key=${api_key}`);
+
+						console.log('foundObjId >>>', foundObjId);
+
+						const description = detailRes.data.artObject.description || '';
+						const data = detailRes.data.artObject.principalMakers[0] || null;
+						const webImgUrl = detailRes.data.artObject.webImage.url || '';
+
+						setInfo({description, data, webImgUrl});
+					}
+					
+				}else{
+
+					// objId가 있을 경우 맨 처음 추가한 로직으로 데이터 요청
+					const response = await axios.get(`${API_BASE_URL}collection/${objId}?key=${api_key}`);
+		
+					console.log('ARtists response', response.data.artObject.webImage.url);
+					
+					const description = response.data.artObject.description || '';
+					const data = response.data.artObject.principalMakers[0] || null;
+					const webImgUrl = response.data.artObject.webImage.url || '';
+		
+					setInfo({data ,description, webImgUrl});
+				}
+
 			} catch(error){
 				console.log('error >>', error);
 				setInfo({
@@ -47,10 +73,10 @@ const Artists = () => {
 			}
 		};
 		
-		if(objId){
-			artistDesc();
-		}
-	}, [objId]);
+		artistDesc();
+	}, [objId, artistName]);
+
+	console.log('Artists Info >>>', info);
 
 
 	return (
