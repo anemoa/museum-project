@@ -17,6 +17,7 @@ const Artists = () => {
 		data: null,
 		description: '',
 	});
+	const [artWorks, setArtWorks] = useState([]);
 
 
 	// console.log('artistId >>>', artistId);
@@ -76,7 +77,34 @@ const Artists = () => {
 		artistDesc();
 	}, [objId, artistName]);
 
+	useEffect( () => {
+		const fetchArtWorks = async () => {
+			try{
+				const workRes = await axios.get(`${API_BASE_URL}collection?key=${api_key}&involvedMaker=${artistName}`);
+				console.log('workRes >>>', workRes);
+				const workResData = workRes.data.artObjects;
+				
+				const artList = workResData.map( (list) => ({
+					name: list.title,
+					objId: list.objectNumber,
+					img: list.webImage?.url,
+				}));
+
+				setArtWorks(artList);
+				
+			} catch(error){
+				console.log(error);
+				setArtWorks([]);
+			}
+		}
+
+		if(artistName){
+			fetchArtWorks();
+		}
+	}, [artistName]);
+
 	console.log('Artists Info >>>', info);
+	console.log('artWorks >>>', artWorks);
 
 
 	return (
@@ -87,7 +115,7 @@ const Artists = () => {
 
 			<h2>Work of Arts</h2>
 			
-			<Slider />
+			<Slider arts={artWorks}/>
 		</main>
 	)
 }

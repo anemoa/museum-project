@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import Windmill from '../../assets/images/windmill.png';
 
 
 // Swiper style import
@@ -14,6 +13,9 @@ import { CardDefault } from './Card';
 
 
 const Slider = ({artists, arts}) => {
+
+	console.log('arts ??????>>>', arts);
+	
 
 	useEffect(() => {
 			console.log(artists);

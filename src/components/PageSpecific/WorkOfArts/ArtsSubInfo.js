@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 
 
 const ContentRender = ({content}) => {
+	console.log(content);
+	
 	
 	switch (content.type){
 		case 'link':
-			return <Link to={content.to} className='artist_btn'>{content.text}</Link>;
+			return <Link to={`/artists/${content.text}`} className='artist_btn'>{content.text}</Link>;
 		case 'text':
 			return <p>{content.text}</p>;
 		case 'links':
@@ -37,7 +39,7 @@ const ArtsSubInfo = ({subInfo}) => {
 			content: {
 				type: 'link',
 				to: '/period',
-				text: `${subInfo.artist}`,
+				text: `${artist}`,
 			}
 		},
 		{
@@ -51,7 +53,7 @@ const ArtsSubInfo = ({subInfo}) => {
 			title: 'Object type', 
 			content: {
 				type: 'text',
-				text: `${subInfo.material}`,
+				text: `${material}`,
 			}
 		},
 		{

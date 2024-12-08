@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ArtistCard = ({painter, idx, image}) => {
 
-	//console.log('painter >>>', painter, idx);
+	console.log('painter ???>>>', painter, idx);
 
 	let idx1 = Number(idx+1);
 
