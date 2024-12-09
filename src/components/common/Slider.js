@@ -47,7 +47,7 @@ const Slider = ({artists, arts}) => {
 				) ) : arts?.map((art, idx) => (
 					<SwiperSlide key={idx}>
 						<Link to={`/work-of-arts/${art.name}`} state={{objId: art.objId}}>
-							<CardDefault name={art.name} />
+							<CardDefault name={art.name} img={art.img} />
 						</Link>
 					</SwiperSlide>
 				))

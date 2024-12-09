@@ -1,0 +1,51 @@
+header{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem;
+	background-color: #eee;
+
+	.logo_menu{
+		display: flex;
+		width: 35%;
+		background-color: pink;
+
+		.logo{
+
+		}
+	
+		.menu{
+	
+			width: 300px;
+			background-color: red;
+			ul{
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+	}
+
+
+	.sns_store{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 35%;
+		background-color: skyblue;
+
+		ul{
+			display: flex;
+			justify-content: space-evenly;
+			width: 300px;
+
+			svg{
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+			
+		}
+	}
+
+}
+
