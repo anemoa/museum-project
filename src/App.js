@@ -6,6 +6,7 @@ import './styles/main.scss';
 import Artists from './pages/Artists';
 import Header from './components/Layout/Header';
 import AboutUs from './pages/AboutUs';
+import Footer from './components/Layout/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 				<Route path="/period" element={<Period />} />
 				<Route path="/artists/:artistId" element={<Artists />} />
 			</Routes>
+			<Footer />
 		</BrowserRouter>
     </div>
   );
