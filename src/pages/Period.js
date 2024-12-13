@@ -92,10 +92,12 @@ const Period = () => {
 	}
 
 	return (
-		<main className='container'>
+		<>
         	<CenturyWrap century ={{btnList, selectedCentury, selectedCenturyNum}} onCenturyChange={handleCenturyChange} />
-        	<ArtistsWrap artistsImg={artistsImg}/>
-    	</main>
+			<main className='container'>
+        		<ArtistsWrap artistsImg={artistsImg}/>
+    		</main>
+		</>
 	)
 }
 

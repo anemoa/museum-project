@@ -14,11 +14,7 @@ import { CardDefault } from './Card';
 
 const Slider = ({artists, arts}) => {
 
-	console.log('arts ??????>>>', arts);
-	
-
 	useEffect(() => {
-			console.log(artists);
 		}, [artists]
 	);
 	

@@ -22,8 +22,7 @@ const Header = () => {
 			<div className="logo_menu">
 				<h1 className="logo">
 					<Link to={'/'}>
-						{/* <img src="" alt="" /> */}
-						로고 자리닷!
+						<img src="/logo.svg" alt="" />
 					</Link>
 				</h1>
 
@@ -52,7 +51,7 @@ const Header = () => {
 						})
 					}
 				</ul>
-				<a href="https://www.rijksmuseumshop.nl/en/gift-ideas" target="_blank" rel="noopener noreferrer">스토어 사이트</a>
+				<a href="https://www.rijksmuseumshop.nl/en/gift-ideas" target="_blank" rel="noopener noreferrer">Go to Store</a>
 			</div>
 		</header>
 	)

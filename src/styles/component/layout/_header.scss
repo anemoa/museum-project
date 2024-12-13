@@ -8,11 +8,15 @@ header{
 
 	.logo_menu{
 		display: flex;
+		justify-content: space-between;
 		width: 35%;
 		background-color: pink;
 
 		.logo{
-
+			background-color: lime;
+			width: 100px;
+			height: 100px;
+			display: inline-block;
 		}
 	
 		.menu{
