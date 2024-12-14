@@ -61,12 +61,12 @@ const Period = () => {
 			// console.log('artistLists >>>', artistLists);
 
 			const artistImgData = uniqueName.filter(artist => artistLists.includes(artist.principalOrFirstMaker))
-									.map( (artist) =>({
-										name: artist.principalOrFirstMaker,
-										img: artist.webImage?.url || null,
-										id: artist.id,
-										title: artist.title
-								  	}));
+			.map( (artist) =>({
+				name: artist.principalOrFirstMaker,
+				img: artist.webImage?.url || null,
+				id: artist.id,
+				title: artist.title
+			}) );
 
 			// console.log('artistImgData >>', artistImgData);
 			

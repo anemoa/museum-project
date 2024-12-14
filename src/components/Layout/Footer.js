@@ -1,8 +1,11 @@
+import { footer } from 'framer-motion/client';
 import React from 'react'
 
 const Footer = () => {
   return (
-	<div>Footer</div>
+	<footer>
+		copy right sdfsdfjlsdlkdsf
+	</footer>
   )
 }
 
