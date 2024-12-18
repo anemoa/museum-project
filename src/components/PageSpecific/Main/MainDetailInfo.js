@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaRegClock, FaEuroSign,FaLocationDot } from "react-icons/fa6";
 
-const MainDetailInfo = () => {
+const MainDetailInfo = ({showInfo = true}) => {
 
 	const info = [
 		{
@@ -19,16 +19,17 @@ const MainDetailInfo = () => {
 		{
 			icon: FaLocationDot,
 			title: "find us",
-			contents1: "sssss aveune",
-			contents2: "010101-22522"
+			contents1: "Museumstraat 1",
+			contents2: "1071 XX Amsterdam"
 		}
 	];
 
+	const displayInfo = showInfo ? info : info.filter((item) => item.title !== "find us" );
 
 	return (
 		<>
 			{
-				info.map( (item, idx) => (
+				displayInfo.map( (item, idx) => (
 					<div key={idx} className='info_box'>
 						<div className='info_title_Box'>
 							<item.icon  className='info_icon'/>

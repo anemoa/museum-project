@@ -12,3 +12,16 @@ img{
 	max-width: $max-width;
 	margin: 0 auto;
 }
+
+// 슬라이더 폰트
+
+.swiper {
+    * {
+        @include garamond(400);
+    }
+}
+
+
+.swiper-wrapper {
+	margin: 0 0 60px 0;
+}

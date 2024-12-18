@@ -28,16 +28,30 @@ const Slider = ({artists, arts}) => {
 		slidesPerView={3}        // 한 번에 보여줄 슬라이드 개수
 		// navigation              // 네비게이션 화살표 활성화
 		pagination={{ clickable: true }}  // 페이지네이션 활성화
-		scrollbar={{ draggable: true }}  // 스크롤바 활성화
+		// scrollbar={{ draggable: true }}  // 스크롤바 활성화
 		// onSwiper={(swiper) => console.log(swiper)}  // Swiper 인스턴스 콜백
 		// onSlideChange={() => console.log('slide change')}  // 슬라이드 변경 시 콜백
 		autoplay={{delay: 2000}} // 자동 넘김
+		breakpoints={{
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+			750: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			}
+		}}
 	  	>
 			{
 				artists ? artists.map( (artist, idx) => (
 					<SwiperSlide key={idx}>
 						<Link to={`/artists/${artist.name}`} state={{objId: artist.objId}}>
-							<CardDefault name={artist.name} />
+							<CardDefault name={artist.name} img={artist.img}/>
 						</Link>
 					</SwiperSlide>
 				) ) : arts?.map((art, idx) => (

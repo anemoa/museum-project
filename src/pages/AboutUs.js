@@ -1,12 +1,10 @@
-import { main } from 'framer-motion/client';
-import React from 'react'
+import React from 'react';
+import AboutInfo from '../components/PageSpecific/AboutUs/AboutInfo';
 
 const AboutUs = () => {
   return (
 	<main>
-		<section>
-			<article></article>
-		</section>
+		<AboutInfo />
 
 		<section></section>
 		
