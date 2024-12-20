@@ -1,10 +1,14 @@
-.main_visual_wrap{
-	width: 100ww;
-	height: 95vh;
-	margin-bottom: 80px;
-	// background-image: url('../../../assets/images/main/main_visual01.webp');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.visual_container{
+	margin-top: 94px;
 
+	.main_visual_wrap{
+		width: 100ww;
+		height: 95vh;
+		margin-bottom: 80px;
+		// background-image: url('../../../assets/images/main/main_visual01.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	
+	}
 }

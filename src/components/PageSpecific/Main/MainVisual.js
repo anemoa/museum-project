@@ -69,7 +69,7 @@ const mainVisualData = [
 
 export default function MainVisual() {
 	return (
-		<>
+		<div className='visual_container'>
 			<Swiper
 			// Swiper 모듈 설치
 			modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -91,6 +91,6 @@ export default function MainVisual() {
 					) )
 				}
 			</Swiper>
-		</>
+		</div>
 	);
 }

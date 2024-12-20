@@ -17,11 +17,16 @@ img{
 
 .swiper {
     * {
-        @include garamond(400);
+        @include garamond(600);
+		font-size: $contents-text2;
     }
 }
 
 
 .swiper-wrapper {
 	margin: 0 0 60px 0;
+
+	img{
+		margin-top: -50px;
+	}
 }

@@ -5,12 +5,15 @@
 // 전역 변수
 @import 'abstracts/variables';
 
+// fonts
+@import './abstracts/fonts';
+
 // reset & 전역 스타일
 @import 'base/reset';
 @import 'base/global';
 
-// fonts
-@import './abstracts/fonts';
+// header
+@import 'component/layout/header';
 
 // Period 페이지
 @import 'pages/period';
@@ -24,5 +27,3 @@
 // main 페이지
 @import 'pages/main';
 
-// header
-@import 'component/layout/header';

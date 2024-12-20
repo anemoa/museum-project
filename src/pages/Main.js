@@ -18,10 +18,10 @@ const slideArtist = [
 ];
 
 const slideArtwork = [
-	{name: 'recomment01', objId: 'SK-C-5'},
-	{name: 'recomment02', objId: 'BK-AM-33-F'},
-	{name: 'recomment03', objId: 'SK-C-1368'},
-	{name: 'recomment04', objId: 'dssss3'},
+	{name: 'Seated Cupid', objId: 'BK-1963-101', img: 'https://iiif.micr.io/oRVzW/0,0,2953,3951/%5E830,/0/default.webp'},
+	{name: 'Isabella', objId: 'SK-A-2931', img: 'https://iiif.micr.io/MrpAp/46,58,6810,9720/%5E830,/0/default.webp'},
+	{name: 'Cabinet', objId: 'SK-C-1368', img: 'https://iiif.micr.io/mAtRc/0,0,4464,5916/%5E830,/0/default.webp'},
+	{name: 'Musical Company', objId: 'SK-A-4674', img: 'https://iiif.micr.io/hdvov/71,56,4630,6209/%5E830,/0/default.webp'},
 ];
 
 const Main = () => {

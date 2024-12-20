@@ -19,9 +19,6 @@ const CenturyWrap = ({century, onCenturyChange}) => {
 	// console.log(century);
 	
 
-	
-
-
     return (
         <section className='century_container'>
             <div className='cen_wrap'>
