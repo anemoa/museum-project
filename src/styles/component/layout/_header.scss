@@ -195,10 +195,16 @@
 			background-color: #fff;
 
 			ul {
-				padding: 1.5rem 0;  // 메뉴 내부 여백은 ul에 줌
+				margin-bottom: 5rem;
+				padding-top: 1.5rem;
 				opacity: 0;  // 처음에는 안 보이게
 				transform: translateY(-20px);  // 살짝 위로
 				transition: all 400ms ease-in-out;
+
+				li:first-child{
+					font-size: $sub-title-text-1;
+					margin-bottom: 1.5rem;
+				}
 			}
 
 			&.active {
@@ -208,6 +214,11 @@
 					opacity: 1;  // 나타날 때 페이드인
 					transform: translateY(0);  // 원래 위치로
 				}
+			}
+
+			.store_btn{
+				display: inline-block;
+				margin-bottom: 5rem;
 			}
 		}
 

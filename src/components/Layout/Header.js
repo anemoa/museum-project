@@ -70,14 +70,20 @@ const Header = () => {
 			</div>
 			<nav className={`m_menu ${isOpen ? "active" : ""}`}>
 				<ul>
-				{
-					menus.map( (menu, idx) => {
-						return <li key={idx}>
-							<Link to={`/${menu.link}`}>{menu.name}</Link>
-						</li>
-					})
-				}
+					{
+						menus.map( (menu, idx) => {
+							return <li key={idx}>
+								<Link to={`/${menu.link}`}>{menu.name}</Link>
+							</li>
+						})
+					}
 				</ul>
+
+				<a className='store_btn' href="">
+					Go Store
+				</a>
+
+				
 			</nav>
 		</header>
 	)
