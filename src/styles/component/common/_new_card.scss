@@ -1,62 +1,151 @@
-.artist_wrap{
-	width: 30%;
-	margin-bottom: 5rem;
-	cursor: pointer;
+@media (min-width: 780px){
+	.artist_wrap{
+		width: 30%;
+		margin-bottom: 5rem;
+		cursor: pointer;
 
-	.artist_box{
-		position: relative;
+		.artist_box{
+			position: relative;
+			width: 100%;  // 추가
+  			display: block;  // 추가
 
-		.artist_img{
-			width: 100%;
-			height: 400px;
-
-			overflow: hidden;
-
-
-			.inner_bg{
+			.artist_img{
+				// width: 100%;
+				// height: 400px;
+				// overflow: hidden;
 				width: 100%;
-				height: 100%;
-				transition: all 0.3s ease;
-				background-size: cover;
-				background-repeat: no-repeat;
-				background-position: center;
+  				height: 400px;
+  				overflow: hidden;
+  				-webkit-transform: translateZ(0);
+  				transform: translateZ(0);
 
-				&:hover{
-					transform: scale(1.2);
+
+				.inner_bg{
+					// width: 100%;
+					// height: 100%;
+					// transition: all 0.3s ease;
+					// background-size: cover;
+					// background-repeat: no-repeat;
+					// background-position: center;
+					width: 100%;
+					height: 100%;
+					-webkit-transition: all 0.3s ease;  // Safari 접두사 추가
+					transition: all 0.3s ease;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+					-webkit-transform: scale(1);  // 초기 상태 추가
+					transform: scale(1);
+
+					&:hover{
+						// transform: scale(1.2);
+						-webkit-transform: scale(1.2);
+    					transform: scale(1.2);
+					}
 				}
+
 			}
 
-		}
+			.artist_name{
 
-		.artist_name{
+				width: 80%;
+				padding: 30px 0 30px 10px;
+				font-size: $sub-title-text-1;
+				font-weight: $font-light;				;
+				position: absolute;
+				left: 0;
+				// bottom: -40px; 이거 대신
+				transform: translateY(calc(100% - 40px));  // 이걸로 변경
+				background-color: $white-1;
 
-			width: 80%;
-			padding: 30px 0 30px 10px;
-			font-size: $sub-title-text-1;
-			font-weight: $font-light;				;
-			position: absolute;
-			left: 0;
-			bottom: -40px;
-			background-color: $white-1;
 
-			strong{
-				letter-spacing: 1.5px;
-				word-wrap: break-word;
-				transition: all 300ms ease;
 
-				&:hover{
+				strong{
+					letter-spacing: 1.5px;
+					word-wrap: break-word;
+					transition: all 300ms ease;
+
+					&:hover{
+						color: $main-color;
+					}
+				}
+
+				.sub_title_artist{
+					margin-bottom: 10px;
 					color: $main-color;
+					font-size: $contents-text;
+					font-style: italic;
+					letter-spacing: 3px;
 				}
 			}
 
-			.sub_title_artist{
-				margin-bottom: 10px;
-				color: $main-color;
-				font-size: $contents-text;
-				font-style: italic;
-				letter-spacing: 3px;
-			}
 		}
-
 	}
+}
+
+
+@media (min-width: 0) and (max-width: 779px) {
+	.artist_wrap{
+		width: 100%;
+		margin-bottom: 5rem;
+		cursor: pointer;
+
+		.artist_box{
+			position: relative;
+
+			.artist_img{
+				width: 100%;
+				height: 400px;
+
+				overflow: hidden;
+
+
+				.inner_bg{
+					width: 100%;
+					height: 100%;
+					transition: all 0.3s ease;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+
+					&:hover{
+						transform: scale(1.2);
+					}
+				}
+
+			}
+
+			.artist_name{
+
+				width: 80%;
+				padding: 30px 0 30px 10px;
+				font-size: $sub-title-text-1;
+				font-weight: $font-light;				;
+				position: absolute;
+				left: 0;
+				bottom: -40px;
+				background-color: $white-1;
+
+				strong{
+					letter-spacing: 1.5px;
+					word-wrap: break-word;
+					transition: all 300ms ease;
+
+					&:hover{
+						color: $main-color;
+					}
+				}
+
+				.sub_title_artist{
+					margin-bottom: 10px;
+					color: $main-color;
+					font-size: $contents-text;
+					font-style: italic;
+					letter-spacing: 3px;
+				}
+			}
+
+		}
+	}
+
 }
