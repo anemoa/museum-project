@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/museum-project/static/css/main.ad7aca75.css",
+    "main.css": "/museum-project/static/css/main.fa7445cc.css",
     "main.js": "/museum-project/static/js/main.651b8758.js",
     "static/media/windmill.png": "/museum-project/static/media/windmill.e53e09fafc4066ed1a30.png",
     "static/media/gogh.jpg": "/museum-project/static/media/gogh.20bc4efc232c784734b3.jpg",
@@ -11,11 +11,11 @@
     "static/media/main_visual02.webp": "/museum-project/static/media/main_visual02.2c839cb5127eeccd858d.webp",
     "static/media/main_visual01.webp": "/museum-project/static/media/main_visual01.720fe4c699f5c9f7f544.webp",
     "index.html": "/museum-project/index.html",
-    "main.ad7aca75.css.map": "/museum-project/static/css/main.ad7aca75.css.map",
+    "main.fa7445cc.css.map": "/museum-project/static/css/main.fa7445cc.css.map",
     "main.651b8758.js.map": "/museum-project/static/js/main.651b8758.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad7aca75.css",
+    "static/css/main.fa7445cc.css",
     "static/js/main.651b8758.js"
   ]
 }
