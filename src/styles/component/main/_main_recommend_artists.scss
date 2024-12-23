@@ -1,0 +1,16 @@
+.recommend_container{
+	width: 100%;
+
+	.recommend_title{
+		margin: 0;
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+
+	.recommend_wrap{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+}

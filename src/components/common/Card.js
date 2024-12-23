@@ -6,7 +6,8 @@ import {
 	Typography,
 	Button,
   } from "@material-tailwind/react";
-   
+
+
   export function CardDefault({name, img}) {
 
 	return (

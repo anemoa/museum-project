@@ -2,23 +2,39 @@
 
 *{
 	@include garamond(400);
+	color: $black-1;
 }
 
 img{
 	width: 100%;
 }
 
-.container{
-	max-width: $max-width;
-	margin: 0 auto;
+
+
+@media (min-width: 320px) and (max-width: 779px){
+	.container{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 1rem
+	}
 }
 
-// 슬라이더 폰트
+
+@media (min-width: 780px){
+	.container{
+		max-width: $max-width;
+		margin: 0 auto;
+		padding: 0 1.5rem
+	}
+}
+
+// 슬라이더 추가 스타일
 
 .swiper {
     * {
         @include garamond(600);
 		font-size: $contents-text2;
+		color: $black-1;
     }
 }
 

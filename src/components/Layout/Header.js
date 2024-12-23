@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaTwitter, FaFacebookF, FaPinterest, FaInstagram } from "react-icons/fa6";
+import { FaTwitter, FaFacebookF, FaPinterest, FaInstagram, FaAnglesRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 
@@ -26,7 +26,7 @@ const Header = () => {
 			<div className='container'>
 				<div className="logo_menu">
 					<h1 className="logo">
-						<Link to={'/'}>
+						<Link to={'/'} onClick={() => setIsOpen(false)}>
 							<img src="/logo.png" alt="logo" />
 						</Link>
 					</h1>
@@ -56,7 +56,10 @@ const Header = () => {
 							})
 						}
 					</ul>
-					<a href="https://www.rijksmuseumshop.nl/en/gift-ideas" target="_blank" rel="noopener noreferrer">Go to Store</a>
+					<div className='go_store_outside'>
+						<a href="https://www.rijksmuseumshop.nl/en/gift-ideas" target="_blank" rel="noopener noreferrer">Go to Store</a>
+						<FaAnglesRight />
+					</div>
 
 					<div className={`m_menu_btn ${isOpen ? "active" : ""}`}
 					 onClick={() => setIsOpen(!isOpen)}
@@ -69,11 +72,15 @@ const Header = () => {
 
 			</div>
 			<nav className={`m_menu ${isOpen ? "active" : ""}`}>
-				<ul>
+				<ul className='m_nav_menu'>
 					{
 						menus.map( (menu, idx) => {
 							return <li key={idx}>
-								<Link to={`/${menu.link}`}>{menu.name}</Link>
+								<Link 
+								to={`/${menu.link}`}
+								onClick={() => setIsOpen(false)}
+								>
+									{menu.name}</Link>
 							</li>
 						})
 					}
@@ -81,9 +88,22 @@ const Header = () => {
 
 				<a className='store_btn' href="">
 					Go Store
+					<FaAnglesRight />
 				</a>
 
-				
+				<ul className='m_nav_sns'>
+					{
+						sns.map( (menu, idx) => {
+							return <li key={idx}>
+								<a href={menu.link} target="_blank" rel="noopener noreferrer">
+									{menu.icon}
+								</a>
+							</li>
+						})
+					}
+				</ul>
+
+
 			</nav>
 		</header>
 	)

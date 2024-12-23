@@ -17,6 +17,9 @@ module.exports = withMT({
   ],
   theme: {
     extend: {},
+	fontFamily: {
+		sans: ["원하는폰트", "sans-serif"],
+	}
   },
   plugins: [],
 });
