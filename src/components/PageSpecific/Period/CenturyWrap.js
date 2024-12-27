@@ -22,7 +22,7 @@ const CenturyWrap = ({century, onCenturyChange}) => {
     return (
         <div className='century_container'>
             <div className='cen_wrap'>
-                <CenturyBtn toggleHandle={toggleHandle} century={selectedCentury} />
+                <CenturyBtn toggleHandle={toggleHandle} century={selectedCentury} isActive={isActive} />
                 <CenturyBg isActive={isActive} btnList={btnList} onCenturyChange={(period,number) => {
 					onCenturyChange(period, number);
 					setIsActive(false);

@@ -41,3 +41,11 @@
         }
     }
 }
+
+
+@media (min-width: 0) and (max-width: 779px) {
+	.artist_card{
+		width: 48%;
+		margin: 0;
+	}
+}

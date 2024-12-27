@@ -20,13 +20,14 @@ img{
 }
 
 
-@media (min-width: 780px){
-	.container{
-		max-width: $max-width;
-		margin: 0 auto;
-		padding: 0 1.5rem
-	}
+
+.container{
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	box-sizing: border-box;
 }
+
 
 // 슬라이더 추가 스타일
 

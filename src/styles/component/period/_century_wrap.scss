@@ -12,26 +12,6 @@
 				color: $white-1;
 			}
 		}
-	
-		.century{
-			max-width: $max-width;
-			margin: 0 auto;
-			padding: 80px 0 50px;
-			text-align: center;
-	
-			// &.century.active{
-			//     background-color: $black-1;
-			// }
-	
-			.cen_btn{
-				padding: 0 20px;
-				color: $black-1;
-				font-size: $title-text;
-	
-				&.cen_btn.active{
-				  color: $sub-color;
-				}
-			}
-		}
 	}
 }
+
