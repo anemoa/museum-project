@@ -1,7 +1,7 @@
 {
   "name": "clinet",
   "version": "0.1.0",
-  "homepage": "https://anemoa.github.io/museum-project/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -25,8 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-	"predeploy": "npm run build",
-  	"deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.2.0",
     "postcss": "^8.4.49",

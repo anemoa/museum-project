@@ -3,8 +3,6 @@ import React from 'react';
 
 const CenturyListBtn = ({btnList, onCenturyChange}) => {
 
-
-
 	console.log('ListBtn >>>', btnList);
 	
 

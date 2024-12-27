@@ -27,7 +27,7 @@ const Header = () => {
 				<div className="logo_menu">
 					<h1 className="logo">
 						<Link to={'/'} onClick={() => setIsOpen(false)}>
-							<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" />
+							<img src={`/logo.png`} alt="logo" />
 						</Link>
 					</h1>
 
