@@ -15,3 +15,23 @@
 	}
 }
 
+@media (min-width: 0) and (max-width: 779px){
+	.century_container{
+		width: 100%;
+		margin-top: 94px;
+		border-bottom: 1px solid $gray-1;
+	
+		.cen_wrap{
+			width: 100%;
+			
+			&.cen_wrap.active{
+				background-color: $black-1;
+		
+				.cen_btn{
+					color: $white-1;
+				}
+			}
+		}
+	}
+	
+}

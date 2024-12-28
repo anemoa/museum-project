@@ -6,46 +6,90 @@
     padding: 1.875rem 1.25rem;
     border: 1px solid #000;
     border-radius: 3px;
+	
+	a{
+		display: block;
 
-    .artist_box{
+		.artist_box{
+	
+			text-align: center;
+	
+			.artist_num{
+				@include oswald(700);
+				font-size: 5rem;
+				letter-spacing: -2px;
+	
+				&::after{
+					display: block;
+					content: "";
+					width: 15px;
+					height: 2px;
+					margin: 0 auto;
+					margin-top: 20px;
+					background-color: $black-1;
+				}
+			}
+	
+			.artist_name{
+				margin-top: 1.563rem;
+				margin-bottom: 1.563rem;
+				font-size: 1.25rem;
+			}
+		}
+	
+		.pic_box{
+			
+			img{
+				width: 100%;
+			}
+		}
+	}
 
-        text-align: center;
-
-        .artist_num{
-            @include oswald(700);
-            font-size: 5rem;
-            letter-spacing: -2px;
-
-            &::after{
-                display: block;
-                content: "";
-                width: 15px;
-                height: 2px;
-                margin: 0 auto;
-                margin-top: 20px;
-                background-color: $black-1;
-            }
-        }
-
-        .artist_name{
-            margin-top: 1.563rem;
-            margin-bottom: 1.563rem;
-            font-size: 1.25rem;
-        }
-    }
-
-    .pic_box{
-        
-        img{
-            width: 100%;
-        }
-    }
 }
 
 
 @media (min-width: 0) and (max-width: 779px) {
 	.artist_card{
-		width: 48%;
+		width: 100%;
 		margin: 0;
+		margin-bottom: 1.5rem;
+
+		a{
+
+			.artist_box{
+	
+				text-align: center;
+		
+				.artist_num{
+					@include oswald(700);
+					font-size: 5rem;
+					letter-spacing: -2px;
+		
+					&::after{
+						display: block;
+						content: "";
+						width: 15px;
+						height: 2px;
+						margin: 0 auto;
+						margin-top: 20px;
+						background-color: $black-1;
+					}
+				}
+		
+				.artist_name{
+					margin-top: 1.563rem;
+					margin-bottom: 1.563rem;
+					font-size: 1.25rem;
+				}
+			}
+		
+			.pic_box{
+				
+				img{
+					width: 100%;
+				}
+			}
+		}
+
 	}
 }

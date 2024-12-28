@@ -35,3 +35,43 @@
 	}
 }
 
+
+
+@media (min-width: 0) and (max-width: 779px) {
+	.cen_bg{
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease, visibility 0.3s ease;
+		
+	   &.cen_bg.active{
+			opacity: 1;
+			visibility: visible;
+			position: absolute;
+			// background-color: rgba(0, 0, 0, 0.8);
+	
+			&::before {
+				display: block;
+				content: "";
+				width: 100%;
+				height: 0.5px;
+				background-color: $white-1;
+				opacity: 0.5;
+			}
+	   }
+	
+	   .cen_list_wrap{
+			width: 100%;
+			background-color: $black-1;
+			transform: translateY(-100%);
+			transition: transform 0.3s ease;
+		
+			&.cen_list_wrap.active {
+				background-color: $black-2;
+				transform: translateY(0);
+			}
+		}
+	}	
+}
