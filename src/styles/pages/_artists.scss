@@ -1,10 +1,19 @@
 @import '../component/artists/artists_default_img';
 @import '../component/artists/artists_info_box';
-@import '../component/artists/artists_wrap';
+@import '../component/artists/artists_container';
 
 
-h2{
-	margin: 4rem 0;
+.work_title{
+	margin: 5rem 0 3rem;
 	font-size: $title-text;
 	text-align: center;
+}
+
+@media (min-width: 0) and (max-width: 779px) {
+
+	.work_title{
+		margin: 3rem 0 1.5rem;
+		font-size: $sub-title-text-3;
+		text-align: center;
+	}
 }

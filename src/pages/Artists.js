@@ -113,7 +113,7 @@ const Artists = () => {
 				info.data ? <ArtistsWrap info={info} /> : <div>Loading</div>
 			}
 
-			<h2>Work of Arts</h2>
+			<h2 className='work_title'>Work of Arts</h2>
 			
 			<Slider arts={artWorks}/>
 		</main>

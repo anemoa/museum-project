@@ -1,4 +1,4 @@
-.artists_wrap{
+.this_2_artist_wrap{
     display: flex;
     flex-wrap: wrap;
     max-width: $max-width;
@@ -7,16 +7,12 @@
 
 @media (min-width: 0) and (max-width: 779px) {
 
-	.container{
+	.artist_container{
 		padding: 0;
 
-		.artists_wrap{
+		.this_2_artist_wrap{
 			width: 100%;
 			justify-content: space-between;
 		}
 	}
 }
-
-// @media (min-width: 0) and (max-width: 779px) {
-
-// }

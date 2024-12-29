@@ -94,7 +94,7 @@ const Period = () => {
 	return (
 		<>
         	<CenturyWrap century ={{btnList, selectedCentury, selectedCenturyNum}} onCenturyChange={handleCenturyChange} />
-			<main className='container'>
+			<main className='artist_container'>
         		<ArtistsWrap artistsImg={artistsImg}/>
     		</main>
 		</>

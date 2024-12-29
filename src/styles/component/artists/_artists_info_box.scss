@@ -1,6 +1,6 @@
 .artists_info_box{
 	width: 55%;
-	padding: 30px 40px;
+	padding: 1rem 1.5625rem;
 
 	.artist_name{
 		font-size: $title-text;
@@ -28,6 +28,56 @@
 
 	.desc_box{
 		margin-top: 1.5rem;
-	}
 
+		.desc_title{
+			font-size: $sub-title-text-1;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
+
+
+@media (min-width: 0) and (max-width: 779px) {
+	.artists_info_box{
+		width: 100%;
+		padding: 1rem;
+	
+		.artist_name{
+			font-size: $sub-title-text-2;
+		}
+	
+		.birth_box{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 1.5rem;
+	
+			div{
+				width: 45%;
+	
+				.birth_txt{
+					font-size: $contents-text-m;
+					text-transform: uppercase;
+				}
+	
+				.birth_year{
+					margin-top: 10px;
+					font-size: $sub-title-text-1;
+					text-transform: uppercase;
+				}
+			}
+		}
+	
+		.desc_box{
+			margin: 1.5rem 0;
+	
+			.desc_title{
+				font-size: $contents-text2;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+		}
+	}
 }

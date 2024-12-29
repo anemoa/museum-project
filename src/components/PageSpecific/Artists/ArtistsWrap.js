@@ -11,11 +11,11 @@ const ArtistsWrap = ({info}) => {
 	
 	
   return (
-	<div className='artists_wrap'>
-		<ArtistsDefaultImg img={webImgUrl}/>
+	<div className='this_artist_wrap'>
+		<ArtistsDefaultImg img={webImgUrl} name={data.name}/>
 		<ArtistsInfoBox info={[data.name, data.dateOfBirth, data.dateOfDeath, description]}/>
 	</div>
   )
 }
 
-export default ArtistsWrap
+export default ArtistsWrap;

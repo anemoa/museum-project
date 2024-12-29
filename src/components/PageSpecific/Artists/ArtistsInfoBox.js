@@ -23,7 +23,7 @@ const ArtistsInfoBox = ({info}) => {
 		</div>
 
 		<p className='desc_box'>
-			{info[3]}
+			<p className='desc_title'>description</p> {info[3]}
 		</p>
 	</div>
   )

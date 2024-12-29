@@ -1,7 +1,22 @@
 .default_img{
 	width: 45%;
+	max-height: 500px;
+	overflow: hidden;
 
 	img{
 		width: 100%;
 	}
+}
+
+@media (min-width: 0) and (max-width: 779px) {
+	.default_img{
+		width: 100%;
+		max-height: 100%;
+		overflow: auto;
+	
+		img{
+			width: 100%;
+		}
+	}
+
 }

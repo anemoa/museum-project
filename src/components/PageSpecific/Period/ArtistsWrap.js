@@ -7,7 +7,7 @@ const ArtistsWrap = ({artistsImg}) => {
 	
 
     return (
-        <section className='artists_wrap'>
+        <section className='this_2_artist_wrap'>
             {
                 artistsImg.map( (artist, idx) => <ArtistCard key={idx} idx={idx} painter={artist.name} image={artist.img} /> )
             }
