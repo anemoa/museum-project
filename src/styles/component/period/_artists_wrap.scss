@@ -6,8 +6,17 @@
 }
 
 @media (min-width: 0) and (max-width: 779px) {
-	.artists_wrap{
-		width: 100%;
-		justify-content: space-between;
+
+	.container{
+		padding: 0;
+
+		.artists_wrap{
+			width: 100%;
+			justify-content: space-between;
+		}
 	}
 }
+
+// @media (min-width: 0) and (max-width: 779px) {
+
+// }

@@ -38,7 +38,8 @@
 		}
 	
 		.pic_box{
-			
+			max-height: 300px;
+			overflow: hidden;
 			img{
 				width: 100%;
 			}
@@ -52,41 +53,46 @@
 	.artist_card{
 		width: 100%;
 		margin: 0;
-		margin-bottom: 1.5rem;
+		margin-bottom: 0;
+		padding: 1rem 1.5rem 2rem;
+		border: none;
+		border-bottom: 1px solid $gray-1;
 
 		a{
 
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			
 			.artist_box{
-	
-				text-align: center;
+				display: flex;
+				align-items: center;
+				width: 60%;
+				text-align: left;
 		
 				.artist_num{
-					@include oswald(700);
-					font-size: 5rem;
-					letter-spacing: -2px;
+					margin-right: 1rem;
+					font-size: $sub-title-text-1;
+					letter-spacing: 1px;
 		
 					&::after{
-						display: block;
-						content: "";
-						width: 15px;
-						height: 2px;
-						margin: 0 auto;
-						margin-top: 20px;
-						background-color: $black-1;
+						display: none;
 					}
 				}
 		
 				.artist_name{
-					margin-top: 1.563rem;
-					margin-bottom: 1.563rem;
+					margin: 0;
 					font-size: 1.25rem;
 				}
 			}
 		
 			.pic_box{
-				
+				width: 30%;
+				max-height: 100px;
+
 				img{
 					width: 100%;
+
 				}
 			}
 		}
