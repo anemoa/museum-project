@@ -8,7 +8,7 @@ const ArtsInfoWrap = ({picInfo}) => {
 
 	return (
 	<>
-		<h2>object detail</h2>	
+		<h2 className='object_detail_title'>object detail</h2>	
 		<div className='arts_info_wrap'>
 			<ArtsInfoBox objInfo={{measuer: measuer, desc: desc, place: place }}/>
 			<ArtsSubInfo subInfo={{artist: artist, material: material}} />

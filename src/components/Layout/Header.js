@@ -11,7 +11,7 @@ const sns = [
 ];
 
 const menus = [
-	{name: 'About Us', link: 'about-us'},
+	// {name: 'About Us', link: 'about-us'},
 	{name: 'Period', link: 'period'},
 ]
 
@@ -57,7 +57,7 @@ const Header = () => {
 						}
 					</ul>
 					<div className='go_store_outside'>
-						<a href="https://www.rijksmuseumshop.nl/en/gift-ideas" target="_blank" rel="noopener noreferrer">Go to Store</a>
+						<a href="https://www.rijksmuseumshop.nl/en/gift-ideas" target="_blank" rel="noopener noreferrer">Store</a>
 						<FaAnglesRight />
 					</div>
 
@@ -86,8 +86,8 @@ const Header = () => {
 					}
 				</ul>
 
-				<a className='store_btn' href="">
-					Go Store
+				<a className='store_btn' href="https://www.rijksmuseumshop.nl/en/gift-ideas" target="_blank" rel="noopener noreferrer">
+					Store
 					<FaAnglesRight />
 				</a>
 

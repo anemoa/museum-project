@@ -2,7 +2,6 @@ import React from 'react';
 import MainVisual from '../components/PageSpecific/Main/MainVisual';
 import Slider from '../components/common/Slider';
 import MainInfo from '../components/PageSpecific/Main/MainInfo';
-import MainMap from '../components/PageSpecific/Main/MainMap';
 
 
 import gogh from '../assets/images/artist-recommend/gogh.jpg';
@@ -33,9 +32,9 @@ const Main = () => {
 
 			{/* <Slider artists={slideArtist} /> */}
 			<MainRecommend artists={slideArtist} />
-			<MainInfo />
+			{/* <MainInfo /> */}
 			<MainRecommend arts={slideArtwork} />
-			<MainMap />
+			
 		</div>
     </main>
   )

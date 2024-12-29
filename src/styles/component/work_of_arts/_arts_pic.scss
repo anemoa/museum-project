@@ -35,6 +35,49 @@
 			}
 		}
 	}
+}
 
+@media (min-width: 0) and (max-width: 779px){
+	.arts_pic_wrap{
+		display: block;
+	
+		.art_pic_box{
+			width: 100%;
+			max-width: 100%;
+	
+			img{
+				width: 100%;
+			}
+		}
+	
+		.art_simple_info{
+			width: 100%;
+			padding: 1rem;
+	
+			h2{
+				font-size: $sub-title-text-2;
+				margin: 0;
+				text-align: left;
+			}
+	
+			.art_info_box{
+				margin-top: 1.5rem;
+
+				&:last-child{
+					margin-bottom: 1.5rem;
+				}
+	
+				.info_title{
+					font-size: $contents-text2;
+					font-weight: $font-bold;
+				}
+	
+				.info_value{
+					margin-top: 5px;
+					font-size: $contents-text2;
+				}
+			}
+		}
+	}
 
 }

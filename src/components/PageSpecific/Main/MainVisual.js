@@ -62,9 +62,9 @@ import 'swiper/css/navigation';
 
 
 const mainVisualData = [
-	{content: 'new thing1', bg: mainVisual01},
-	{content: 'new thing2', bg: mainVisual02},
-	{content: 'new thing3', bg: mainVisual03},
+	{content: ' ', bg: mainVisual01},
+	{content: ' ', bg: mainVisual02},
+	{content: ' ', bg: mainVisual03},
 ];
 
 export default function MainVisual() {
@@ -74,7 +74,7 @@ export default function MainVisual() {
 			// Swiper 모듈 설치
 			modules={[Navigation, Pagination, A11y, Autoplay]}
 			// 기본 설정
-			navigation              // 네비게이션 화살표 활성화
+			// navigation              // 네비게이션 화살표 활성화
 			pagination={{ clickable: true }}  // 페이지네이션 활성화
 			// onSwiper={(swiper) => console.log(swiper)}  // Swiper 인스턴스 콜백
 			// onSlideChange={() => console.log('slide change')}  // 슬라이드 변경 시 콜백

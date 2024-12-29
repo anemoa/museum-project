@@ -46,7 +46,7 @@ const ArtsSubInfo = ({subInfo}) => {
 			title: 'My shortlist', 
 			content: {
 				type: 'text',
-				text: 'icon',
+				text: 'Add Favorite List',
 			}
 		},
 		{

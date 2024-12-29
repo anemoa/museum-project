@@ -16,5 +16,26 @@
 			font-weight: $font-bold;
 		}
 	}
+}
 
+@media (min-width: 0) and (max-width: 779px){
+
+	.arts_sub_info{
+		width: 100%;
+		padding: 0;
+		border-left: none;
+	
+		.arts_sub_info_box{
+			margin-bottom: 30px;
+	
+			.artist_btn{
+				color: $gray-2;
+			}
+	
+			.sub_info_title{
+				margin-bottom: 10px;
+				font-size: $contents-text2;
+			}
+		}
+	}
 }
