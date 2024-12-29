@@ -1,0 +1,14 @@
+footer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 3rem 1.5rem;
+	border-top: 1px solid #69746126;
+	color: $gray-2;
+
+	a{
+		color: $main-color;
+	}
+}

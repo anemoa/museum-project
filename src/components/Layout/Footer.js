@@ -4,7 +4,10 @@ import React from 'react'
 const Footer = () => {
   return (
 	<footer>
-		copy right sdfsdfjlsdlkdsf
+    	<p>Data provided by Rijksmuseum API</p>
+    	<a href="https://www.rijksmuseum.nl/en/api" target="_blank" rel="noopener noreferrer">
+      	Rijksmuseum API
+    	</a>
 	</footer>
   )
 }
